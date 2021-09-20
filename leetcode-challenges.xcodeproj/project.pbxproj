@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		799795D526F6699B007D4D56 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799795D426F6699B007D4D56 /* main.swift */; };
+		79532DBC26F80AC100BA670C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79532DBB26F80AC100BA670C /* TwoSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79532DBB26F80AC100BA670C /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		799795D126F6699B007D4D56 /* leetcode-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
-		799795D426F6699B007D4D56 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		799795D326F6699B007D4D56 /* leetcode-challenges */ = {
 			isa = PBXGroup;
 			children = (
-				799795D426F6699B007D4D56 /* main.swift */,
+				79532DBB26F80AC100BA670C /* TwoSum.swift */,
 			);
 			path = "leetcode-challenges";
 			sourceTree = "<group>";
@@ -93,6 +93,7 @@
 				TargetAttributes = {
 					799795D026F6699B007D4D56 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -119,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799795D526F6699B007D4D56 /* main.swift in Sources */,
+				79532DBC26F80AC100BA670C /* TwoSum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +245,17 @@
 		799795D926F6699B007D4D56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QNHX86K7F4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -255,9 +263,15 @@
 		799795DA26F6699B007D4D56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QNHX86K7F4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
